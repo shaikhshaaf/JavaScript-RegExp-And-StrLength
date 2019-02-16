@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		//Using String search() With a String
+		
+		var str = " i am iron man";
+		var n =str.search("captain");
+		console.log(n);
+
+		//Using String search() With a Regular Expression
+
+
+        var str = " i am iron man";
+		var n =str.search(/captain/i);
+		console.log(n);
+
+
+        //Using String replace() With a String
+        
+       var str = "i am iron man";
+       var n=str.replace("iron","captain");
+       console.log(n);
+
+
+       //Using String replace() With a Regular Expression
+        
+       var str = "i am iron man";
+       var n=str.replace(/iron/i , "captain");
+       console.log(n);
+       
+
+
+      // Modifiers can be used to perform case-insensitive more global searches:i,g,m
+
+      var str = "i am iron man";
+       var n= str.match(/am/g);
+       console.log(n);
+     
+
+         
+         
+         var str = "123456789";
+         var p  = /[1-4]/g;
+         var result = str.match(p);
+         console.log(result);
+         
+
+         var str = "iron,captain,hoor";
+         var p = /[hoor]/g;
+         var result = str.match(p);
+         console.log(result);
+          
+          
+      
+           
+     
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
